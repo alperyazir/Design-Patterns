@@ -3,7 +3,6 @@ using namespace std;
 
 struct IButton
 {
-
     virtual void on_click(string) = 0;
     virtual void render() = 0;
     virtual ~IButton() {}
