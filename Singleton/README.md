@@ -1,4 +1,4 @@
-##Singleton Pattern
+## Singleton Pattern
 **Singleton** is a creational design pattern that lets you ensure that a class has only one instance while providing a global a access point to this instance.
 
 Solves 2 problems:
@@ -10,7 +10,6 @@ Solves 2 problems:
  * Create a static creation method that acts as a consructor. This method calls the private constructor to create an object and saves it in a static field. All following calls to this method return the existence object.
 
 
-UML Diagram:
  ![UML Diagram](singleton.png)
 
  Cons:
