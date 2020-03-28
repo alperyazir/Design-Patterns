@@ -20,7 +20,7 @@ struct Adaptee
     }
 };
 
-// Adapter 1: with composition
+// Object Adapter 1: with composition
 struct Adapter : Target
 {
     Adapter(Adaptee *adaptee) : adaptee(adaptee) {}
@@ -34,7 +34,7 @@ struct Adapter : Target
 private:
     Adaptee *adaptee;
 };
-// Adapter 2: with multiple inhertiance
+// Class Adapter 2: with multiple inhertiance
 // class Adapter : public Target, public Adaptee
 // {
 // public:
