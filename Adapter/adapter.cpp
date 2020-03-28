@@ -20,6 +20,7 @@ struct Adaptee
     }
 };
 
+// Adapter 1: with composition
 struct Adapter : Target
 {
     Adapter(Adaptee *adaptee) : adaptee(adaptee) {}
@@ -33,6 +34,18 @@ struct Adapter : Target
 private:
     Adaptee *adaptee;
 };
+// Adapter 2: with multiple inhertiance
+// class Adapter : public Target, public Adaptee
+// {
+// public:
+//     Adapter() {}
+//     std::string Request() const override
+//     {
+//         std::string to_reverse = SpecificRequest();
+//         std::reverse(to_reverse.begin(), to_reverse.end());
+//         return "Adapter: (TRANSLATED) " + to_reverse;
+//     }
+// };
 
 void ClientCode(const Target *target)
 {
